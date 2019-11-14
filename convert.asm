@@ -4,12 +4,6 @@ section .text
 
 strToInt: 
 
-check_basis:
-	cmp rdi, 36
-	jg false
-	cmp rdi, 1
-	jl false
-
 	mov r10, 0		
 	;r10 as counter
 	mov rax, 0
@@ -68,5 +62,4 @@ false:
 	mov rax, -1
 	;wrong input, return -1		 
 	ret 
-
 
